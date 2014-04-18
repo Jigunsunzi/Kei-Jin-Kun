@@ -1,12 +1,8 @@
-columnmean<-function(y){
-        nc<-ncol(y)
-        means<-numeric(nc)
-        for(i in 1:nc){
-              means[i]<-mean(y[,i], na.rm=TRUE)
-        }
-        means
+take<-function(k){
+        vir<-k*2
+        print(vir)
 }
-
-
-
-  
+take2<-function(k){
+        vir<-k*2
+        if (k> 3){print(vir)} else {print("nope")}
+}
